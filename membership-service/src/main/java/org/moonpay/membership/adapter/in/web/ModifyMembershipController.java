@@ -1,9 +1,9 @@
 package org.moonpay.membership.adapter.in.web;
 
 import lombok.RequiredArgsConstructor;
+import org.moonpay.common.WebAdapter;
 import org.moonpay.membership.application.port.in.ModifyMembershipCommand;
 import org.moonpay.membership.application.port.in.ModifyMembershipUseCase;
-import org.moonpay.membership.common.WebAdapter;
 import org.moonpay.membership.domain.Membership;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

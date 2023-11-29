@@ -3,7 +3,7 @@ package org.moonpay.membership.application.port.in;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.moonpay.membership.common.SelfValidating;
+import org.moonpay.common.SelfValidating;
 
 import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotBlank;

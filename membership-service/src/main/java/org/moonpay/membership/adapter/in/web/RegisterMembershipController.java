@@ -1,11 +1,10 @@
 package org.moonpay.membership.adapter.in.web;
 
 import lombok.RequiredArgsConstructor;
+import org.moonpay.common.WebAdapter;
 import org.moonpay.membership.application.port.in.RegisterMembershipCommand;
 import org.moonpay.membership.application.port.in.RegisterMembershipUseCase;
-import org.moonpay.membership.common.WebAdapter;
 import org.moonpay.membership.domain.Membership;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

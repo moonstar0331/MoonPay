@@ -1,15 +1,12 @@
 package org.moonpay.membership.application.service;
 
 import lombok.RequiredArgsConstructor;
+import org.moonpay.common.UseCase;
 import org.moonpay.membership.adapter.out.persistence.MembershipJpaEntity;
 import org.moonpay.membership.adapter.out.persistence.MembershipMapper;
 import org.moonpay.membership.application.port.in.ModifyMembershipCommand;
 import org.moonpay.membership.application.port.in.ModifyMembershipUseCase;
-import org.moonpay.membership.application.port.in.RegisterMembershipCommand;
-import org.moonpay.membership.application.port.in.RegisterMembershipUseCase;
 import org.moonpay.membership.application.port.out.ModifyMembershipPort;
-import org.moonpay.membership.application.port.out.RegisterMembershipPort;
-import org.moonpay.membership.common.UseCase;
 import org.moonpay.membership.domain.Membership;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,10 +1,10 @@
 package org.moonpay.membership.adapter.out.persistence;
 
 import lombok.RequiredArgsConstructor;
+import org.moonpay.common.PersistentAdapter;
 import org.moonpay.membership.application.port.out.FindMembershipPort;
 import org.moonpay.membership.application.port.out.ModifyMembershipPort;
 import org.moonpay.membership.application.port.out.RegisterMembershipPort;
-import org.moonpay.membership.common.PersistentAdapter;
 import org.moonpay.membership.domain.Membership;
 
 @PersistentAdapter
