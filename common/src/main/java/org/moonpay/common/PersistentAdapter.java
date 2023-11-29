@@ -1,4 +1,4 @@
-package org.moonpay.membership.common;
+package org.moonpay.common;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;
@@ -9,8 +9,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Component
-public @interface WebAdapter {
-
+public @interface PersistentAdapter {
     @AliasFor(annotation = Component.class)
     String value() default "";
 }

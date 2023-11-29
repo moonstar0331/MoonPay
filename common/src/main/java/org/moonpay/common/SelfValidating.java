@@ -1,4 +1,4 @@
-package org.moonpay.membership.common;
+package org.moonpay.common;
 
 import javax.validation.*;
 import java.util.Set;
