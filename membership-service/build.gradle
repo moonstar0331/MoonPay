@@ -19,13 +19,18 @@ dependencies {
     implementation project(path: ':common')
     implementation 'org.jetbrains:annotations:23.0.0'
 
-    runtimeOnly 'com.h2database:h2'
+//    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'mysql:mysql-connector-java'
 }
 
 docker {
     println(tasks.bootJar.outputs.files)
-    name rootProject.name+'-'+project.name + ":" + version
+    // 이미지 이름
+    name "moonpay-"+project.name + ":" + version
+    // Dockerfile 위치
     dockerfile file('../Dockerfile')
+    // 어떤 파일들을 Dockerfile 에 복사할 것인가
     files tasks.bootJar.outputs.files
+    // Dockerfile 에 전달할 인자
     buildArgs(['JAR_FILE': tasks.bootJar.outputs.files.singleFile.name])
 }
