@@ -1,5 +1,6 @@
-rootProject.name = 'MoonPay'
+rootProject.name = 'moonpay'
+
 include 'membership-service'
 include 'common'
-include 'common'
+include 'banking-service'
 

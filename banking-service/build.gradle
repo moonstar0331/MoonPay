@@ -5,7 +5,7 @@ ext{
     axonVersion = "4.6.0"
 }
 
-group 'org.moonpay.membership'
+group 'org.moonpay.banking'
 version '1.0-SNAPSHOT'
 
 dependencies {
